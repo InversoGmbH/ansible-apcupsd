@@ -14,8 +14,8 @@
 
 - name: Check role availability
   fail:
-    msg: 'This module only works on Debian or derivatives like Ubuntu'
-  when: ansible_os_family != 'Debian'
+    msg: 'This module only works on Debian, RHEL, or their derivatives like Ubuntu, CentOS'
+  when: ansible_os_family not in ['Debian', 'RedHat']
   tags: ['always']
 
 - name: Import init tasks

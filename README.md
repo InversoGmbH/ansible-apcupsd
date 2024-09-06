@@ -23,7 +23,7 @@ If you use the zabbix monitoring profile you will need the role [ansible-zabbix-
 
 ## OS Family
 
-This role is available for Debian
+This role is available for Debian-like and RedHat-like Distros
 
 ## Features
 
